@@ -2,6 +2,8 @@
 
 A full-stack web app that helps students at Valencia College connect and collaborate by creating or joining study groups based on course, campus, and time.
 
+![Part of the VC family gif](giphy2.gif)
+
 ---
 
 ## 🚀 Features
@@ -20,6 +22,20 @@ A full-stack web app that helps students at Valencia College connect and collabo
 
 - 🔄 **Edit & Leave Groups**  
   Members can update group details or leave at any time. Groups are auto-deleted when no members remain.
+
+---
+
+## Demo
+
+### 1. Searching for and viewing existing study groups, + utilizing filters.
+
+![Demo of the App 1](demo1.gif)
+
+---
+
+### 2. Creating a study group, + leaving (as only member) which results in an auto-delete.
+
+![Demo of the App 2](demo2.gif)
 
 ---
 
@@ -130,3 +146,5 @@ This project is licensed under the [MIT License](./LICENSE).
 ---
 
 ## 👨‍🎓 Made With ❤️ for Valencia College
+
+![Purrcy The Puma](giphy.gif)
