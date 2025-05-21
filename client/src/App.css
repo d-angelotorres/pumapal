@@ -1,0 +1,351 @@
+:root {
+  --valencia-red: #BF311A;
+  --valencia-yellow: #FDB913;
+  --valencia-black: #000000;
+  --valencia-white: #FFFFFF;
+  --valencia-gray-80: #58595B;
+  --valencia-gray-60: #808285;
+  --valencia-gray-40: #A7A9AC;
+  --valencia-gray-15: #DCDDDE;
+  --valencia-gray-5: #F1F1F2;
+}
+
+/* Base Styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f3f4f6;
+  color: var(--valencia-black);
+}
+
+/* Layout */
+#root {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  background-color: var(--valencia-white);
+  border-radius: 1rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid var(--valencia-gray-15);
+}
+
+/* Typography */
+h1 {
+  font-size: 2.75rem;
+  color: var(--valencia-red);
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.read-the-docs {
+  color: var(--valencia-gray-60);
+  font-style: italic;
+}
+
+/* Components */
+.card {
+  background-color: var(--valencia-gray-5);
+  padding: 2em;
+  margin: 1rem 0;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06);
+  border-left: 6px solid var(--valencia-red);
+  text-align: left;
+}
+
+.modal {
+  background-color: var(--valencia-black);
+  color: var(--valencia-white);
+  padding: 1.5rem;
+  border: 3px solid var(--valencia-yellow);
+  border-radius: 12px;
+  margin: 2rem auto 0;
+  max-width: 500px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Buttons */
+button {
+  padding: 0.8rem 1.6rem;
+  margin: 1rem 0;
+  background-color: var(--valencia-red);
+  color: var(--valencia-white);
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--valencia-yellow);
+  color: var(--valencia-black);
+  transform: scale(1.03);
+}
+
+.modal button {
+  margin: 0.5rem;
+  padding: 0.6rem 1.4rem;
+  font-size: 1rem;
+}
+
+.contact-button {
+  background-color: #1976d2;
+  margin-left: 0.5rem;
+}
+
+.edit-button {
+  background-color: #ff8f00;
+}
+
+.leave-button {
+  background-color: #f44336;
+  margin-left: 0.5rem;
+}
+
+.leave-button:hover {
+  background-color: #d32f2f;
+}
+
+.leave-button:disabled {
+  background-color: #ffcdd2;
+}
+
+.clear-filters {
+  background-color: #f5f5f5;
+  color: #333;
+  border: 1px solid #ddd;
+  padding: 0.5rem 1rem;
+  height: fit-content;
+}
+
+.clear-filters:hover {
+  background-color: #e0e0e0;
+}
+
+.create-button {
+  background-color: #4CAF50;
+  width: 100%;
+}
+
+.create-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.back-button {
+  background: none;
+  border: none;
+  color: #1976d2;
+  margin-bottom: 1rem;
+  padding: 0;
+}
+
+/* Form Elements */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding-top: 1rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+label {
+  display: block;
+  text-align: left;
+  margin: 1rem 0 0.25rem;
+  font-weight: 600;
+  color: var(--valencia-gray-80);
+}
+
+input[type="text"],
+input[type="email"],
+select,
+.form-group input,
+.form-group select {
+  width: 100%;
+  max-width: 300px;
+  padding: 0.75rem 1rem;
+  margin: 0.5rem 0;
+  border: 1px solid var(--valencia-gray-40);
+  border-radius: 10px;
+  background-color: var(--valencia-white);
+  font-size: 1rem;
+  color: var(--valencia-black);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+select:focus {
+  border-color: var(--valencia-red);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(191, 49, 26, 0.2);
+}
+
+/* Utility Classes */
+.member-actions, 
+.join-actions,
+.form-actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.filter-controls {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  min-width: 200px;
+}
+
+.contact-list {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+}
+
+.contact-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.contact-list li {
+  margin: 0.5rem 0;
+}
+
+.edit-modal {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.owner-badge {
+  background-color: #fff8e1;
+  color: #ff8f00;
+  padding: 0.5rem;
+  border-radius: 4px;
+  margin: 0.5rem 0;
+  display: inline-block;
+}
+
+.error-message {
+  color: #d32f2f;
+  background-color: #fde0e0;
+  padding: 1rem;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+
+.success-message {
+  color: #388e3c;
+  background-color: #e8f5e9;
+  padding: 1rem;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+
+/* Logo & Animations */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  transition: transform 0.3s ease, filter 300ms;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0 0 1.5em var(--valencia-red));
+}
+
+@keyframes logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .logo.react {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+/* Specific Containers */
+.create-group-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.group-card {
+  border: 1px solid var(--valencia-gray-40);
+  border-radius: 12px;
+  padding: 1.5rem;
+  background-color: var(--valencia-white);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 1rem 0;
+  transition: all 0.3s ease;
+}
+
+.timeOfDay {
+  font-size: 12px;
+  color: blue;
+}
+
+/* Tooltip styling */
+.time-filter-tooltip {
+  position: relative;
+  display: inline-block;
+  margin-left: 4px;
+  cursor: help;
+}
+
+.time-filter-tooltip:hover::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #000;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: 1px solid #3b82f6;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  width: 220px;
+  font-size: 14px;
+  z-index: 100;
+  white-space: pre-wrap;
+  line-height: 1.6;
+  font-weight: normal;
+}
+
+.form-group input[type="checkbox"] {
+  width: auto;
+  margin: 0;
+  accent-color: #3b82f6;
+}
+
+.form-group label[for="showOwnerEmail"] {
+  font-size: 0.9rem;
+  color: #555;
+}
